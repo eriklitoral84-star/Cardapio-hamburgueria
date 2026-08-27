@@ -1,0 +1,496 @@
+{
+  "categories": [
+    {
+      "id": "combos",
+      "name": "Combos Especiais",
+      "icon": "Flame",
+      "description": "Combo completo com Burger + Fritas Crocantes + Bebida gelada com desconto especial"
+    },
+    {
+      "id": "smash",
+      "name": "Smash Burgers",
+      "icon": "Utensils",
+      "description": "Burgers prensados na chapa ultra quente com aquela crostinha caramelizada irresistível"
+    },
+    {
+      "id": "artesanais",
+      "name": "Burgers Artesanais",
+      "icon": "Beef",
+      "description": "Burgers altos de 180g grelhados no fogo com blends selecionados de carnes nobres"
+    },
+    {
+      "id": "porcoes",
+      "name": "Acompanhamentos",
+      "icon": "Cookie",
+      "description": "Porções generosas e crocantes preparadas na hora para compartilhar"
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas & Shakes",
+      "icon": "CupSoda",
+      "description": "Sucos naturais, refrigerantes em lata e milkshakes cremosos artesanais"
+    },
+    {
+      "id": "sobremesas",
+      "name": "Sobremesas",
+      "icon": "Cake",
+      "description": "Adoce sua experiência com nossas sobremesas feitas com muito carinho"
+    }
+  ],
+  "products": [
+    {
+      "id": "combo-smash-duplo",
+      "name": "Combo Smash Supremo",
+      "description": "2x Smash Burgers 90g, queijo cheddar inglês derretido, fatias de bacon crocante, molho especial da casa no pão brioche selado + Batata Frita individual + Bebida lata 350ml à sua escolha.",
+      "price": 38.90,
+      "originalPrice": 46.90,
+      "categoryId": "combos",
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=80",
+      "badge": "Mais Vendido 🔥",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "combo-drink",
+          "title": "Escolha sua Bebida",
+          "subtitle": "Escolha 1 opção inclusa",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "coca-zero", "name": "Coca-Cola Zero Lata 350ml", "price": 0 },
+            { "id": "coca-normal", "name": "Coca-Cola Original Lata 350ml", "price": 0 },
+            { "id": "guarana-ant", "name": "Guaraná Antarctica 350ml", "price": 0 },
+            { "id": "suco-laranja", "name": "Suco Natural de Laranja 400ml", "price": 3.00 },
+            { "id": "shake-upgrade", "name": "Trocar por Milkshake Nutella 400ml (+ R$ 9,90)", "price": 9.90 }
+          ]
+        },
+        {
+          "id": "combo-fries-upgrade",
+          "title": "Turbinar a Batata",
+          "subtitle": "Opção adicional",
+          "required": false,
+          "min": 0,
+          "max": 1,
+          "options": [
+            { "id": "cheddar-bacon-batata", "name": "Adicionar Cheddar Cremoso & Bacon na Batata", "price": 5.90, "description": "Muito mais sabor para sua batata" },
+            { "id": "batata-rustica", "name": "Trocar por Batata Rústica com Páprica & Alecrim", "price": 4.50 }
+          ]
+        },
+        {
+          "id": "extras-burger",
+          "title": "Adicionais no Lanche",
+          "subtitle": "Turbine seu hambúrguer",
+          "required": false,
+          "min": 0,
+          "max": 4,
+          "options": [
+            { "id": "extra-carne-smash", "name": "Hambúrguer Smash 90g extra", "price": 7.00 },
+            { "id": "extra-bacon", "name": "Fatias extras de Bacon Crocante", "price": 4.50 },
+            { "id": "extra-cheddar", "name": "Queijo Cheddar Fatiado extra", "price": 3.50 },
+            { "id": "extra-cebola-caramel", "name": "Cebola Caramelizada", "price": 3.00 },
+            { "id": "molho-pote-extra", "name": "Pote de Molho Especial da Casa 50ml", "price": 3.50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combo-duplo-casal",
+      "name": "Combo Duplo Casal",
+      "description": "2 Hambúrgueres à sua escolha + 1 Porção Grande de Fritas com Cheddar & Bacon + 2 Bebidas lata 350ml. Perfeito para dividir a dois!",
+      "price": 74.90,
+      "originalPrice": 88.00,
+      "categoryId": "combos",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+      "badge": "Econômico 💑",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "casal-burger1",
+          "title": "Primeiro Hambúrguer",
+          "subtitle": "Selecione o 1º lanche",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "b1-smash-cheddar", "name": "Smash Duplo Cheddar Bacon", "price": 0 },
+            { "id": "b1-bbq-crispy", "name": "Smash BBQ Crispy", "price": 0 },
+            { "id": "b1-monster-trufado", "name": "Monster Trufado 180g (+ R$ 5,00)", "price": 5.00 }
+          ]
+        },
+        {
+          "id": "casal-burger2",
+          "title": "Segundo Hambúrguer",
+          "subtitle": "Selecione o 2º lanche",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "b2-smash-cheddar", "name": "Smash Duplo Cheddar Bacon", "price": 0 },
+            { "id": "b2-bbq-crispy", "name": "Smash BBQ Crispy", "price": 0 },
+            { "id": "b2-monster-trufado", "name": "Monster Trufado 180g (+ R$ 5,00)", "price": 5.00 }
+          ]
+        },
+        {
+          "id": "casal-drink1",
+          "title": "1ª Bebida (Lata 350ml)",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "cd1-coca-zero", "name": "Coca-Cola Zero", "price": 0 },
+            { "id": "cd1-coca", "name": "Coca-Cola Original", "price": 0 },
+            { "id": "cd1-guarana", "name": "Guaraná Antarctica", "price": 0 }
+          ]
+        },
+        {
+          "id": "casal-drink2",
+          "title": "2ª Bebida (Lata 350ml)",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "cd2-coca-zero", "name": "Coca-Cola Zero", "price": 0 },
+            { "id": "cd2-coca", "name": "Coca-Cola Original", "price": 0 },
+            { "id": "cd2-guarana", "name": "Guaraná Antarctica", "price": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smash-duplo-cheddar-bacon",
+      "name": "Smash Duplo Cheddar & Bacon",
+      "description": "Dois hambúrgueres de 90g prensados com crosta crocante, fatias duplas de queijo cheddar derretido, tiras de bacon crocante, picles artesanal e maionese defumada no pão brioche dourado na manteiga.",
+      "price": 28.90,
+      "originalPrice": 32.90,
+      "categoryId": "smash",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+      "badge": "Top 1 🏆",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "smash-adicionais",
+          "title": "Turbine seu Smash",
+          "subtitle": "Escolha quantos adicionais desejar",
+          "required": false,
+          "min": 0,
+          "max": 5,
+          "options": [
+            { "id": "add-smash-carne", "name": "Adicionar +1 Carne Smash 90g", "price": 7.00 },
+            { "id": "add-bacon-dobro", "name": "Bacon em Dobro", "price": 4.50 },
+            { "id": "add-cheddar-cremoso", "name": "Cheddar Cremoso Injetado", "price": 3.90 },
+            { "id": "add-cebola-roxa", "name": "Cebola Roxa Marinada", "price": 2.00 },
+            { "id": "add-jalapeno", "name": "Pimenta Jalapeño Fatiada", "price": 2.50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smash-bbq-crispy",
+      "name": "Smash BBQ Crispy Onion",
+      "description": "Dois smash de 90g, queijo monterey jack derretido, generosa camada de cebola crispy super crocante e molho barbecue artesanal defumado no pão australiano tostado.",
+      "price": 29.90,
+      "categoryId": "smash",
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80",
+      "badge": "Crocante ⭐",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "bbq-adicionais",
+          "title": "Adicionais Opcionais",
+          "required": false,
+          "min": 0,
+          "max": 3,
+          "options": [
+            { "id": "add-bacon-bbq", "name": "Bacon Crocante em Tiras", "price": 4.50 },
+            { "id": "add-extra-crispy", "name": "Extra Cebola Crispy", "price": 3.50 },
+            { "id": "add-molho-bbq-pote", "name": "Potinho extra de Barbecue 50ml", "price": 3.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smash-salad-fresh",
+      "name": "Smash Salad Fresh",
+      "description": "Smash 90g, queijo prato derretido, alface americana fresca, rodelas de tomate caipira, cebola roxa e molho tártaro especial no pão brioche leve e fofinho.",
+      "price": 24.90,
+      "categoryId": "smash",
+      "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "fresh-adicionais",
+          "title": "Adicionais",
+          "required": false,
+          "min": 0,
+          "max": 3,
+          "options": [
+            { "id": "add-carne-fresh", "name": "Mais 1 Carne 90g", "price": 7.00 },
+            { "id": "add-ovo-gema-mole", "name": "Ovo Frito Caipira (Gema Mole)", "price": 3.50 },
+            { "id": "add-bacon-fresh", "name": "Bacon Crocante", "price": 4.50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monster-trufado",
+      "name": "Monster Trufado 180g",
+      "description": "Hambúrguer artesanal alto de 180g grelhado no fogo, queijo brie maçaricado, cogumelos salteados na manteiga e maionese trufada especial no pão brioche de fermentação natural.",
+      "price": 37.90,
+      "categoryId": "artesanais",
+      "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=800&q=80",
+      "badge": "Gourmet ✨",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "ponto-trufado",
+          "title": "Ponto da Carne",
+          "subtitle": "Selecione o ponto ideal",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "ponto-vermelho", "name": "Ao Ponto para Mal Passado (Centro rosado e suculento)", "price": 0 },
+            { "id": "ponto-ideal", "name": "Ao Ponto (Recomendação do Chef)", "price": 0 },
+            { "id": "ponto-bem", "name": "Bem Passado (Totalmente cozido)", "price": 0 }
+          ]
+        },
+        {
+          "id": "trufado-adicionais",
+          "title": "Adicionais",
+          "required": false,
+          "min": 0,
+          "max": 3,
+          "options": [
+            { "id": "add-brie-extra", "name": "Queijo Brie Extra", "price": 6.50 },
+            { "id": "add-cogumelos-extra", "name": "Porção Extra de Cogumelos", "price": 5.00 },
+            { "id": "add-maio-trufada-pote", "name": "Pote Maionese Trufada 50ml", "price": 4.50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gorgonzola-melt",
+      "name": "Gorgonzola & Caramelized",
+      "description": "Hambúrguer alto de 180g, creme aveludado de gorgonzola artesanal, cebola caramelizada no açúcar mascavo, bacon rústico e rúcula baby fresca no pão australiano macio.",
+      "price": 36.90,
+      "categoryId": "artesanais",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
+      "badge": "Chef Special 👨‍🍳",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "ponto-gorgonzola",
+          "title": "Ponto da Carne",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "ponto-g-ao-ponto", "name": "Ao Ponto (Centro rosado)", "price": 0 },
+            { "id": "ponto-g-bem-passado", "name": "Bem Passado", "price": 0 }
+          ]
+        },
+        {
+          "id": "gorgonzola-adicionais",
+          "title": "Adicionais",
+          "required": false,
+          "min": 0,
+          "max": 3,
+          "options": [
+            { "id": "add-carne-180g", "name": "Hambúrguer 180g Adicional", "price": 10.00 },
+            { "id": "add-gorgonzola-extra", "name": "Creme de Gorgonzola Extra", "price": 4.90 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veggie-portobello",
+      "name": "Veggie Portobello Burger",
+      "description": "Cogumelo Portobello grelhado inteiro com queijo provolone tostado, tomates confitados no azeite de ervas, rúcula fresca e maionese verde artesanal no pão brioche vegano.",
+      "price": 32.90,
+      "categoryId": "artesanais",
+      "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&q=80",
+      "badge": "Vegetariano 🌱",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "veggie-adicionais",
+          "title": "Personalização",
+          "required": false,
+          "min": 0,
+          "max": 2,
+          "options": [
+            { "id": "add-cebola-crispy-v", "name": "Cebola Crispy", "price": 3.00 },
+            { "id": "add-molho-verde-pote", "name": "Pote Maionese Verde 50ml", "price": 3.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fritas-cheddar-bacon",
+      "name": "Batata Frita com Cheddar & Bacon",
+      "description": "Porção de 350g de batatas palito super crocantes e sequinhas, cobertas com molho cremoso de queijo cheddar artesanal e cubinhos dourados de bacon frito.",
+      "price": 24.90,
+      "originalPrice": 28.00,
+      "categoryId": "porcoes",
+      "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80",
+      "badge": "Imperdível 🍟",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "tamanho-fritas",
+          "title": "Tamanho da Porção",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "fritas-media", "name": "Média (350g - serve 2 pessoas)", "price": 0 },
+            { "id": "fritas-grande", "name": "Grande (600g - serve 3 a 4 pessoas)", "price": 10.00 }
+          ]
+        },
+        {
+          "id": "fritas-molhos",
+          "title": "Molhos Extras",
+          "required": false,
+          "min": 0,
+          "max": 2,
+          "options": [
+            { "id": "molho-alho", "name": "Maionese de Alho Confitado (50ml)", "price": 3.50 },
+            { "id": "molho-barbecue-extra", "name": "Barbecue Defumado (50ml)", "price": 3.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "onion-rings",
+      "name": "Onion Rings Crocantes",
+      "description": "12 anéis de cebola selecionados empanados na farinha panko temperada, ultracrocantes por fora e macios por dentro. Acompanha molho tártaro ou barbecue.",
+      "price": 21.90,
+      "categoryId": "porcoes",
+      "image": "https://images.unsplash.com/photo-1639024471285-0afc3855f485?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "molho-onions",
+          "title": "Escolha o Molho Acompanhante",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "molho-onions-tartaro", "name": "Molho Especial Tártaro", "price": 0 },
+            { "id": "molho-onions-bbq", "name": "Molho Barbecue Defumado", "price": 0 },
+            { "id": "molho-onions-verde", "name": "Maionese Verde da Casa", "price": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nuggets-artesanais",
+      "name": "Nuggets de Frango Artesanais (8 un)",
+      "description": "8 pedaços suculentos de peito de frango temperados e empanados com crosta dourada e crocante. Acompanha molho barbecue de goiabada.",
+      "price": 22.90,
+      "categoryId": "porcoes",
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshake-nutella",
+      "name": "Milkshake Nutella & Ninho (450ml)",
+      "description": "Sorvete artesanal de baunilha batido com farta Nutella original, leite Ninho em pó, chantilly cremoso e raspas de chocolate no topo.",
+      "price": 21.90,
+      "categoryId": "bebidas",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+      "badge": "Super Cremoso 🥤",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "shake-adicionais",
+          "title": "Adicionais no Shake",
+          "required": false,
+          "min": 0,
+          "max": 2,
+          "options": [
+            { "id": "add-chantilly-extra", "name": "Chantilly Extra", "price": 2.50 },
+            { "id": "add-calda-nutella", "name": "Borda Extra de Nutella", "price": 3.50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "milkshake-morango",
+      "name": "Milkshake Morango com Pedaços",
+      "description": "Feito com sorvete artesanal, calda pura de morangos frescos cozidos na casa e generosa camada de chantilly.",
+      "price": 19.90,
+      "categoryId": "bebidas",
+      "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true
+    },
+    {
+      "id": "refrigerante-lata",
+      "name": "Refrigerante Lata 350ml",
+      "description": "Lata de 350ml bem geladinha.",
+      "price": 6.50,
+      "categoryId": "bebidas",
+      "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "sabor-refri",
+          "title": "Selecione o Sabor",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "refri-coca-original", "name": "Coca-Cola Original", "price": 0 },
+            { "id": "refri-coca-zero", "name": "Coca-Cola Sem Açúcar", "price": 0 },
+            { "id": "refri-guarana", "name": "Guaraná Antarctica Original", "price": 0 },
+            { "id": "refri-guarana-zero", "name": "Guaraná Zero", "price": 0 },
+            { "id": "refri-fanta-laranja", "name": "Fanta Laranja", "price": 0 },
+            { "id": "refri-sprite", "name": "Sprite Fresh", "price": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suco-natural-laranja",
+      "name": "Suco Natural de Laranja 500ml",
+      "description": "Suco 100% natural espremido na hora, sem conservantes ou adição de água. Puro sabor da fruta.",
+      "price": 9.90,
+      "categoryId": "bebidas",
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true,
+      "optionGroups": [
+        {
+          "id": "opcao-acucar",
+          "title": "Adoçante ou Açúcar",
+          "required": true,
+          "min": 1,
+          "max": 1,
+          "options": [
+            { "id": "suco-sem-acucar", "name": "Sem Açúcar (Natural)", "price": 0 },
+            { "id": "suco-com-acucar", "name": "Com Açúcar Moderado", "price": 0 },
+            { "id": "suco-com-adocante", "name": "Com Adoçante", "price": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brownie-sorvete",
+      "name": "Brownie Artesanal com Sorvete",
+      "description": "Brownie de chocolate belga morno, com casquinha crocante e interior denso, servido com bola generosa de sorvete de baunilha e calda quente de chocolate.",
+      "price": 18.90,
+      "categoryId": "sobremesas",
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+      "badge": "Favorito 🍫",
+      "isAvailable": true
+    },
+    {
+      "id": "mini-churros",
+      "name": "Mini Churros Recheados (6 un)",
+      "description": "6 mini churros sequinhos e crocantes passados no açúcar com canela, servidos com potinho de doce de leite cremoso artesanal.",
+      "price": 16.90,
+      "categoryId": "sobremesas",
+      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=800&q=80",
+      "isAvailable": true
+    }
+  ]
+}
